@@ -23,8 +23,8 @@ view.setBackground(drawable);
 ```
 
 ## Support for Android api versions < 21 (LOLLIPOP)
+### Case - Extended view
 ``` Java
-// Extended view touch event override
 @Override
 public boolean onTouchEvent(MotionEvent event) {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -32,8 +32,10 @@ public boolean onTouchEvent(MotionEvent event) {
     }
     return super.onTouchEvent(event);
 }
+```
 
-// touch event listener
+### Case - TouchListener
+``` Java
 /* view */.setOnTouchListener(new OnTouchListener() {
     @Override
     public boolean onTouch(View v, MotionEvent event) {
