@@ -19,7 +19,7 @@ Drawable drawable = new CompatRippleDrawable.Builder()
         .setAlpha(/* Ripple Alpha */)
         .build();
         
-view.setBackground(drawable);
+/* view */.setBackground(drawable);
 ```
 
 ## Support for Android api versions < 21 (LOLLIPOP)
